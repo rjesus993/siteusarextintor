@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <!-- Garante que a página seja responsiva em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Rápido: Como Usar um Extintor</title>
+    <style>
+        /* CSS Embutido para funcionar em um arquivo só */
+        :root {
+            --cor-vermelho: #d90429;
+            --cor-fundo: #f4f4f4;
+            --cor-texto: #333;
+            --cor-branco: #ffffff;
+            --cor-aviso: #fffbe6;
+            --borda-aviso: #ffc107;
+        }
+
+        body {
+            /* Usa fontes de sistema comuns para carregamento rápido */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--cor-vermelho);
+            color: var(--cor-branco);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 900px;
+            /* Centraliza o conteúdo */
+            margin: 20px auto;
+            padding: 1rem;
+            background-color: var(--cor-branco);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            color: var(--cor-vermelho);
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--cor-vermelho);
+            padding-bottom: 8px;
+        }
+
+        /* Bloco de aviso destacado */
+        .aviso-bloco {
+            background-color: var(--cor-aviso);
+            border-left: 6px solid var(--borda-aviso);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .aviso-bloco p {
+            margin: 0;
+            font-weight: 500;
+        }
+
+        /* Container para os 4 passos */
+        .passos-container {
+            /* Cria um grid responsivo */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .passo {
+            background-color: #fff8f8;
+            border: 1px solid #fdd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .passo h3 {
+            margin: 0 0 10px 0;
+            color: var(--cor-vermelho);
+            font-size: 1.5rem;
+        }
+        
+        .passo p {
+            margin: 0;
+        }
+
+        /* Tabela de Classes */
+        .table-wrapper {
+            /* Garante que a tabela seja rolável em telas pequenas */
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f9f9f9;
+            font-weight: 600;
+        }
+
+        td strong {
+            color: var(--cor-vermelho);
+            display: block;
+            font-size: 1.1rem;
+        }
+
+        /* Listas */
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Responsividade para celulares */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .passo h3 {
+                font-size: 1.3rem;
+            }
+            main {
+                margin: 10px;
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🚨 Guia Rápido: Como Usar um Extintor de Incêndio</h1>
+    </header>
+
+    <main>
+        <section id="antes">
+            <h2>1. Antes de Agir: Avalie a Situação</h2>
+            <p>Use este guia apenas se você se sentir seguro e o fogo for pequeno e contido. Em caso de dúvida, <strong>EVACUE</strong> o local e <strong>LIGUE PARA OS BOMBEIROS (193)</strong>.</p>
+            
+            <div class="aviso-bloco">
+                <p>Se você não tem certeza em qualquer um desses pontos, não lute contra o fogo. Saia imediatamente.</p>
+            </div>
+            
+            <p>Antes de pegar o extintor, faça estas três perguntas:</p>
+            <ul>
+                <li><strong>O fogo é pequeno e controlável?</strong><br>Nunca tente combater um fogo que está se espalhando rapidamente, que bloqueia sua saída ou que preenche o ambiente com fumaça.</li>
+                <li><strong>Eu tenho uma rota de fuga clara?</strong><br>Sempre posicione-se de costas para uma saída segura antes de tentar apagar o fogo.</li>
+                <li><strong>Este é o extintor correto?</strong><br>Usar o extintor errado (ex: água em fogo elétrico) pode piorar a situação. Verifique os rótulos no extintor.</li>
+            </ul>
+        </section>
+
+        <section id="como-usar">
+            <h2>2. Como Usar: Os 4 Passos Essenciais</h2>
+            <p>Mantenha-se a uma distância segura (geralmente 2 a 3 metros) e siga os passos:</p>
+
+            <div class="passos-container">
+                <div class="passo">
+                    <h3>1. PUXE o pino</h3>
+                    <p>Puxe o pino de segurança com força para quebrar o lacre. Isso impede que o extintor seja acionado acidentalmente.</p>
+                </div>
+                <div class="passo">
+                    <h3>2. APONTE o bico</h3>
+                    <p>Aponte o bico ou a mangueira para a <strong>BASE DO FOGO</strong>, não para as chamas. O objetivo é apagar o combustível.</p>
+                </div>
+                <div class="passo">
+                    <h3>3. APERTE o gatilho</h3>
+                    <p>Aperte as duas alavancas (gatilhos) juntas com firmeza para liberar o agente extintor.</p>
+                </div>
+                <div class="passo">
+                    <h3>4. MOVIMENTE o jato</h3>
+                    <p>Movimente o bico lentamente de um lado para o outro, em forma de "varredura", cobrindo toda a base do fogo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tipos">
+            <h2>3. Os Tipos de Fogo e Extintores</h2>
+            <p>Verifique o rótulo do seu extintor. Ele terá símbolos (letras ou figuras) que indicam para qual tipo de fogo ele serve. O extintor <strong>Pó ABC</strong> é o mais versátil e comum.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Classe</th>
+                            <th>O que está queimando?</th>
+                            <th>Extintores Mais Comuns</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Classe A</strong></td>
+                            <td><strong>Sólidos combustíveis</strong><br>(Madeira, papel, tecido, borracha)</td>
+                            <td>Água (H₂O) ou Pó Químico ABC</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Classe B</strong></td>
+                            <td><strong>Líquidos e gases inflamáveis</strong><br>(Gasolina, óleo, álcool, tinta, gás de cozinha)</td>
+                            <td>Pó Químico (ABC ou BC) ou Gás Carbônico (CO₂)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Classe C</strong></td>
+                            <td><strong>Equipamentos elétricos energizados</strong><br>(Motores, quadros de força, computadores)</td>
+                            <td>Gás Carbônico (CO₂) ou Pó Químico (ABC ou BC)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Classe K</strong></td>
+                            <td><strong>Gorduras e óleos de cozinha</strong><br>(Fogo em panelas, fritadeiras)</td>
+                            <td>Extintor Classe K (Agente químico úmido)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="depois">
+            <h2>4. Depois de Usar</h2>
+            <ul>
+                <li><strong>Monitore o local:</strong> Mesmo após apagar as chamas, o fogo pode reacender (principalmente Classe A). Fique de olho.</li>
+                <li><strong>Se o fogo não apagar, SAIA!</strong> Não gaste o extintor inteiro. Se o fogo não diminuir visivelmente nos primeiros segundos, sua prioridade é evacuar.</li>
+                <li><strong>Substitua ou Recarregue:</strong> Um extintor, mesmo que usado por poucos segundos, deve ser enviado para recarga imediatamente. Não o coloque de volta no lugar.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Este é um guia de referência rápida. A segurança é sempre a prioridade. Em caso de emergência, ligue 193.</p>
+    </footer>
+
+</body>
+</html>
